@@ -1,4 +1,4 @@
-class Solution { // Bắt buộc phải có dòng này
+class Solution { 
 public:
     void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
         int i = m - 1;
@@ -16,4 +16,4 @@ public:
             k--;
         }
     }
-}; // Đừng quên dấu chấm phẩy này nhé!
+}; 

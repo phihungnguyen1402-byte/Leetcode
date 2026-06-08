@@ -21,9 +21,14 @@ học thuật toán
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0020-valid-parentheses](https://github.com/phihungnguyen1402-byte/Leetcode/tree/main/0020-valid-parentheses/) | Easy |
+| [0657-robot-return-to-origin](https://github.com/phihungnguyen1402-byte/Leetcode/tree/main/0657-robot-return-to-origin/) | Easy |
 | [1662-check-if-two-string-arrays-are-equivalent](https://github.com/phihungnguyen1402-byte/Leetcode/tree/main/1662-check-if-two-string-arrays-are-equivalent/) | Easy |
 ## Stack
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0020-valid-parentheses](https://github.com/phihungnguyen1402-byte/Leetcode/tree/main/0020-valid-parentheses/) | Easy |
+## Simulation
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0657-robot-return-to-origin](https://github.com/phihungnguyen1402-byte/Leetcode/tree/main/0657-robot-return-to-origin/) | Easy |
 <!---LeetCode Topics End-->

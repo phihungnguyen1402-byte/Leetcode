@@ -9,9 +9,8 @@ public:
             charset.erase(size[left]);
             left++;
         }
-        charset.insert(size[right]);
-        maxlength=max(maxlength,right-left+1);
-
-    }return maxlength;
+    charset.insert(size[right]);
+    maxlength=max(maxlength,right-left+1);
+    } return maxlength;
     }
 };

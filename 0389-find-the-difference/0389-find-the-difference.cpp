@@ -7,7 +7,7 @@ public:
     }
     for (char c:s){
         sum-=c;
-    } 
+    }
     return (char) sum;
     }
 };

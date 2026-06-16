@@ -9,6 +9,6 @@ class Solution{
         for(string s:word2){
             s2+=s;
         }
-    return s1==s2;
-    }  
-};    
+        return s1==s2;
+    }
+};

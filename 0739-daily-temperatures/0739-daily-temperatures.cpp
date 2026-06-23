@@ -1,21 +1,27 @@
 #include <vector>
-#include <stack>
 
 using namespace std;
+
 class Solution {
 public:
     vector<int> dailyTemperatures(vector<int>& temperatures) {
         int n = temperatures.size();
         vector<int> answer(n, 0); 
-        stack<int> st; 
-        for (int i = 0; i < n; ++i) {
-            while (!st.empty() && temperatures[i] > temperatures[st.top()]) {
-                int prevDayIndex = st.top(); 
-                st.pop();
-                answer[prevDayIndex] = i - prevDayIndex; 
+        int hottest = 0; 
+        for (int i = n - 1; i >= 0; --i) {
+            int currentTemp = temperatures[i];
+            if (currentTemp >= hottest) {
+                hottest = currentTemp;
+                continue;
             }
-            st.push(i);
+
+            int days = 1; 
+            while (temperatures[i + days] <= currentTemp) {
+                days += answer[i + days];
+            }
+            answer[i] = days;
         }
+
         return answer;
     }
 };

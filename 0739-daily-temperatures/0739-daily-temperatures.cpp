@@ -8,7 +8,7 @@ public:
         int n = temperatures.size();
         vector<int> answer(n, 0); 
         int hottest = 0; 
-        for (int i = n - 1; i >= 0; --i) {
+        for (int i = n - 1; i >= 0; i--) {
             int currentTemp = temperatures[i];
             if (currentTemp >= hottest) {
                 hottest = currentTemp;

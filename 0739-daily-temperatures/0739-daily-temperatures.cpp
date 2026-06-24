@@ -1,7 +1,5 @@
 #include <vector>
-
 using namespace std;
-
 class Solution {
 public:
     vector<int> dailyTemperatures(vector<int>& temperatures) {
@@ -14,14 +12,12 @@ public:
                 hottest = currentTemp;
                 continue;
             }
-
             int days = 1; 
             while (temperatures[i + days] <= currentTemp) {
                 days += answer[i + days];
             }
             answer[i] = days;
         }
-
         return answer;
     }
 };
